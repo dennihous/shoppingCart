@@ -1,9 +1,10 @@
 import React from "react";
-import { PRODUCTS } from "../../products";
+import bandsData from "../../products/bandData.json";
 import { Product } from "./product";
 import "./shop.css";
 
 export const Shop = () => {
+  const { bands } = bandsData
   return (
     <div className="shop">
       <div className="shopTitle">
@@ -11,8 +12,8 @@ export const Shop = () => {
       </div>
 
       <div className="products">
-        {PRODUCTS.map((product) => (
-          <Product data={product} />
+        {bands.map((product) => (
+          <Product key={product.id} data={product} />
         ))}
       </div>
     </div>
