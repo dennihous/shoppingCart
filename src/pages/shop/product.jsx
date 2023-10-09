@@ -10,7 +10,7 @@ export const Product = (props) => {
         <p>
           <b>{name}</b>
         </p>
-        <p> ${price}</p>
+        <p> £{price}</p>
       </div>
       <button className="addToCartBttn">
         Add To Cart
