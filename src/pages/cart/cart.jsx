@@ -17,7 +17,7 @@ export const Cart = () => {
         <h1>Your Cart Items</h1>
       </div>
       <div className="cart">
-        {bands.map((product) => {
+        {bands.bands.map((product) => {
           if (cartItems[product.id] !== 0) {
             return <CartItem data={product} />;
           }
